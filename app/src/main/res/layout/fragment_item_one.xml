@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5E5"
+    android:orientation="vertical"
+    android:paddingBottom="100dp"
+    tools:context="com.statussaver.ItemOneFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/linearLayout1">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:id="@+id/codeButton"
+            android:text="+91"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            />
+        <EditText
+            android:id="@+id/editno"
+            android:layout_width="337dp"
+            android:layout_weight="90"
+            android:layout_height="wrap_content"
+            android:hint="Enter whatsapp number"
+            android:maxLength="10"
+            android:inputType="number">
+        </EditText>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editmsg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="50dp"
+        android:hint="Enter your message"
+        android:inputType="textCapSentences" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:text="Send Message"
+        android:textAllCaps="false"
+        android:layout_marginBottom="50dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+</LinearLayout>
